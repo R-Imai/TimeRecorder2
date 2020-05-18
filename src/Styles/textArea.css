@@ -1,0 +1,30 @@
+.area-space{
+  -webkit-app-region: no-drag;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  height: 20rem;
+  width: calc(100% - 4rem);
+  overflow-y: auto;
+  /* border-radius: 5px 5px 15px 15px / 5px 5px 15px 15px; */
+  font-size: 14px;
+  resize: none;
+  border: none;
+  display: block;
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6));
+}
+
+.area-space::-webkit-scrollbar{
+  width: 1.2rem;
+}
+
+.area-space::-webkit-scrollbar-track{
+  background: #a8a8a8;
+  border: none;
+  border-radius: 2rem;
+}
+
+.area-space::-webkit-scrollbar-thumb{
+  background: #676767;
+  border-radius: 2rem;
+  box-shadow: none;
+}

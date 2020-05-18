@@ -1,0 +1,124 @@
+form, .current-job {
+  border-bottom: solid 2px #888888;
+}
+
+.main-space {
+  margin: 0 2rem;
+  height: calc(100% - 6rem);
+}
+
+.form-top fieldset, .current-job-field{
+  background-color: #4b7153;
+  background:linear-gradient(135deg, #141414 1%, #215740, #27aa7d, #e5f9e0);
+  /* background:linear-gradient(135deg, #2d3b35, #215740 90%, #3bb794); */
+  border: none;
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6));
+}
+
+.current-job-info {
+  padding: 1rem 2rem;
+  height: 7.4rem;
+  font-size: 2.4rem;
+  color: #e5f9e0;
+  font-weight: bold;
+}
+
+.form-top input {
+  background-color: #e5f9e0;
+  color: #1c1214;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit-button-style{
+  color: #7affd2;
+}
+
+.submit-button-style:active{
+  color: #d4fef0;
+  background:linear-gradient(135deg, #141414, #27aa7d);
+}
+
+.copy-button-style{
+  color: #00c7bb;
+  height: 3rem;
+  width: 12rem;
+}
+
+.copy-button-style:active{
+  color: #d4fefc;
+  background:linear-gradient(135deg, #141414, #27a6aa);
+}
+
+.edit-button-style{
+  color: #ecc746;
+  height: 3rem;
+  width: 12rem;
+}
+
+.edit-button-style:active{
+  color: #fcfed4;
+  background:linear-gradient(135deg, #141414, #aaa427);
+}
+
+.edit-button-active-style{
+  color: #fcfed4;
+  background:linear-gradient(135deg, #aaa427, #141414);
+  height: 3rem;
+  width: 12rem;
+}
+
+.edit-button-active-style:hover{
+  color: #fcfed4;
+  background:linear-gradient(135deg, #aaa427, #aaa427);
+  height: 3rem;
+  width: 12rem;
+}
+
+.edit-button-active-style:active{
+  color: #fcfed4;
+  background:linear-gradient(135deg, #141414, #aaa427);
+}
+
+.cancel-button-style {
+  color: #fed4d4;
+  background:linear-gradient(135deg, #aa2727, #141414);
+}
+
+.cancel-button-style:hover{
+  color: #fed4d4;
+  background:linear-gradient(135deg, #aa2727, #aa2727);
+}
+
+.cancel-button-style:active{
+  color: #fed4d4;
+  background:linear-gradient(135deg, #141414, #aa2727);
+}
+
+.record-space {
+  margin-top: 2rem;
+  height: calc(100% - 16.2rem - 2rem);
+}
+
+.text-area {
+  height: calc(100% - 7rem) !important;
+  background:linear-gradient(135deg, #effcec, #b9ffe7);
+  background-color: #e5f9e0 !important;
+  color: var(--theme-g-dark-d5);
+}
+
+.text-area::-webkit-scrollbar-track {
+  background: #e5f9e0 !important;
+}
+
+.text-area::-webkit-scrollbar-thumb {
+  background: #40c9a2 !important;
+}
+
+.record-button-space {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background:linear-gradient(135deg, #b0e3d1, #68c7a6);
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6));
+}

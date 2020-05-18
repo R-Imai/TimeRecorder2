@@ -1,0 +1,104 @@
+form {
+  border-bottom: solid 2px #888888;
+}
+
+.main-space {
+  margin: 0 2rem;
+  height: calc(100% - 6rem);
+}
+
+.form-calc {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.form-calc fieldset {
+  background-color: #714b4b;
+  background:linear-gradient(135deg, #141414 1%, #572121, #aa2727, #f9e0e0);
+  /* background:linear-gradient(135deg, #2d3b35, #215740 90%, #3bb794); */
+  border: none;
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6));
+}
+
+.form-calc input {
+  background-color: #f9e0e0;
+  color: #1c1214;
+  border-radius: 5px;
+  border: none;
+}
+
+.calc-button-style{
+  margin: auto 1rem;
+  color: #ff7a7a;
+}
+
+.calc-button-style:active{
+  color: #fed4d4;
+  background:linear-gradient(135deg, #141414, #aa2727);
+}
+
+.save-fig-button-style{
+  margin: auto 1rem;
+  color: #ff30cb;
+}
+
+.save-fig-button-style:active{
+  color: #fed4d4;
+  background:linear-gradient(135deg, #141414, #aa276a);
+}
+
+.copy-button-style{
+  color: #00c7bb;
+  height: 3rem;
+  width: 12rem;
+}
+
+.copy-button-style:active{
+  color: #d4fefc;
+  background:linear-gradient(135deg, #141414, #27a6aa);
+}
+
+.submit-button-style:active{
+  color: #fed4d4;
+  background:linear-gradient(135deg, #141414, #aa2727);
+}
+
+.record-space {
+  display: flex;
+  margin-top: 2rem;
+  height: calc(100% - 10.2rem - 2rem );
+}
+
+.daily-data {
+  padding: 0 0.5rem;
+  width: 50%;
+}
+
+.month-fig {
+  padding: 0 0.5rem;
+  width: 50%;
+  overflow-x: auto;
+}
+
+.text-area {
+  height: calc(100% - 7rem) !important;
+  background:linear-gradient(135deg, #fcecec, #ffb9b9);
+  background-color: #f9e0e0 !important;
+  color: var(--theme-g-dark-d5);
+}
+
+.text-area::-webkit-scrollbar-track {
+  background: #f9e0e0 !important;
+}
+
+.text-area::-webkit-scrollbar-thumb {
+  background: #c94040 !important;
+}
+
+.record-button-space {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background:linear-gradient(135deg, #e3b0b0, #c76868);
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0,0,0,0.6));
+}

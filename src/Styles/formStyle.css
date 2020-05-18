@@ -1,0 +1,25 @@
+
+
+.form-style .field {
+  display: flex;
+  align-items: center;
+}
+
+.form-style fieldset {
+  margin: 0 auto;
+  padding: 1rem 4rem 2rem 4rem;
+  width: calc(100% - 8rem);
+  border: none;
+}
+
+
+.form-style input {
+  -webkit-app-region: no-drag;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.1rem 0.5rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.4rem;
+  border: none;
+}
