@@ -126,7 +126,7 @@
   "devDependencies": {
     "@types/sortablejs": "^1.10.4",
     "concurrently": "^5.2.0",
-    "electron": "^6.0.1",
+    "electron": "^9.4.0",
     "electron-builder": "^22.6.0",
     "electron-is-dev": "^1.2.0",
     "electron-packager": "^14.2.1",
