@@ -13,17 +13,17 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-router-dom": "^5.1.5",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
+    "@types/node": "^12.20.25",
+    "@types/react": "^16.14.15",
+    "@types/react-dom": "^16.9.14",
+    "@types/react-router-dom": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
     "axios": "^0.19.2",
     "babel-eslint": "10.1.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.1.0",
-    "babel-plugin-named-asset-import": "^0.3.6",
+    "babel-plugin-named-asset-import": "^0.3.7",
     "babel-preset-react-app": "^9.1.2",
     "camelcase": "^5.3.1",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
@@ -55,20 +55,20 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.1.2",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.3.0",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
     "semver": "6.3.0",
-    "sortablejs": "^1.10.2",
+    "sortablejs": "^1.14.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "2.3.5",
     "ts-pnp": "1.1.6",
-    "typescript": "~3.7.2",
+    "typescript": "^3.7.7",
     "url-loader": "2.3.0",
     "webpack": "4.42.0",
     "webpack-dev-server": "3.10.3",
@@ -92,7 +92,7 @@
       "icon": "public/icon.ico",
       "target": "dir"
     },
-    "nsis":{
+    "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
     }
@@ -105,8 +105,10 @@
     "build": "npm run react-build && npm run electron-build-win && npm run electron-build-mac",
     "build-win": "npm run react-build && npm run electron-build-win",
     "build-mac": "npm run react-build && npm run electron-build-mac",
+    "build-mac-m1": "npm run react-build && npm run electron-build-mac-m1",
     "electron-build-win": "electron-builder --win --x64",
-    "electron-build-mac": "electron-builder --mac --x64"
+    "electron-build-mac": "electron-builder --mac --x64",
+    "electron-build-mac-m1": "electron-builder --mac --arm64"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -124,10 +126,10 @@
     ]
   },
   "devDependencies": {
-    "@types/sortablejs": "^1.10.4",
-    "concurrently": "^5.2.0",
-    "electron": "^6.0.1",
-    "electron-builder": "^22.6.0",
+    "@types/sortablejs": "^1.10.7",
+    "concurrently": "^5.3.0",
+    "electron": "^9.4.0",
+    "electron-builder": "^22.11.7",
     "electron-is-dev": "^1.2.0",
     "electron-packager": "^14.2.1",
     "wait-on": "^4.0.2"
