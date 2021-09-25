@@ -22,10 +22,15 @@ type State = {
   day: number
 }
 
+const DAY_CHANGE_HOUR = 5
+
 class MainPage extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
     const date = new Date();
+    if (date.getHours() < DAY_CHANGE_HOUR) {
+      date.setDate(date.getDate() - 1)
+    }
     this.state = {
       workHistory: null,
 			workHistoryStr: '',
