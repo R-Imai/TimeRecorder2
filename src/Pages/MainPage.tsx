@@ -59,7 +59,6 @@ class MainPage extends Component<Props, State> {
 
     const workHistory = await RecordAction.recordGet(recordPath, this.state.day)
     const jobInfo = startVal.jobInfo;
-    console.log(workHistory);
     this.setState({
       jobInfo: jobInfo,
       isWorking: startVal.isDoing,
@@ -173,6 +172,7 @@ class MainPage extends Component<Props, State> {
           <Form
             callSubmit={this.jobStart.bind(this)}
             sugestList={this.state.sugestList}
+            workHistory={this.state.workHistory}
           />
         }
         <div className={styles['record-space']}>

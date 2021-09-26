@@ -6,6 +6,7 @@ import formStyles from '../Styles/formStyle.css';
 
 type Props = {
   sugestList: string[],
+  workHistory: recordData|null,
   callSubmit: (e: State) => void
 }
 
@@ -34,6 +35,11 @@ class TaskInputForm extends Component<Props, State> {
     const dataList = this.props.sugestList.map((v) => {
       return (<option value={v} key={v} />)
     })
+    const targetHistory = this.state.genre !== "" && this.props.workHistory !== null ? this.props.workHistory[this.state.genre] : undefined;
+    const nameSuggestList = typeof targetHistory !== 'undefined' ? Object.keys(targetHistory) : []
+    const nameSudgest = typeof nameSuggestList !== 'undefined' ? nameSuggestList.map((v) => {
+      return (<option value={v} key={v} />)
+    }) : []
     return (
       <form className={`${formStyles["form-style"]} ${styles["form-top"]}`}>
         <fieldset>
@@ -41,13 +47,16 @@ class TaskInputForm extends Component<Props, State> {
           <datalist id="sudgest">
             {dataList}
           </datalist>
-          <input onChange={(e) => {this.setState({name: e.target.value})}} placeholder="作業名" type="text" />
+          <input onChange={(e) => {this.setState({name: e.target.value})}} placeholder="作業名" type="text" list="name-sudgest" />
+          <datalist id="name-sudgest">
+            {nameSudgest}
+          </datalist>
         </fieldset>
         <div className={buttonStyles["button-space"]}>
 					<button
             className={`${buttonStyles["padding-button"]} ${styles["submit-button-style"]}`}
             onClick={this.submit.bind(this)}
-            type="button"
+            type="submit"
           >
             Job Start
           </button>

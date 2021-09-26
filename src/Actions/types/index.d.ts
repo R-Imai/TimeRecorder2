@@ -33,7 +33,7 @@ type recordStartGetResponce = {
   jobInfo: currentJobInfo
 }
 
-type recordData = { [key: string]: string }
+type recordData = { [key: string]: {[key: string]: string }}
 
 type recordEditParam = {
   val: recordData,
